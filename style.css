@@ -1,14 +1,17 @@
 .container{
     background-color: #ddd;
     border-radius: 8px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: American Typewriter, serif;
     margin: auto;
     padding: 20px;
     width: 80%;
 }
 
 header{
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    font-family: American Typewriter, serif;
     background-color: rgb(0, 174, 255);
     padding: 5px;
     text-align: center;
@@ -24,21 +27,25 @@ header h1 {
     font-size: 35px;
 }
 
-/* .navigation{
+/* .navigation {
     background-color: #eee;
-    text-align: center;
     border-radius: 8px;
+    grid-row: 1/4;
+    grid-column: 1;
 } */
 
 nav button{
-    background-color: #eee;
+    align-content: center;
+    background-color: rgb(0, 174, 255);
     color: black;
-    padding: 5px;
-    font-size: 18px;
+    /*padding: 10px;*/
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 }
 
 nav button:hover{
-    background-color: rgb(0, 174, 255);
+    background-color: #eee;
     transition: .5s;
 }
 
@@ -48,6 +55,13 @@ nav button:hover{
     height: auto;
     margin-top: 20px;
     width: 20%;
+}
+
+.articleImg{
+    box-shadow: 0px 0px 1px 1px gray;
+    height: auto;
+    margin-top: 20px;
+    width: 50%;
 }
 
 #github{
@@ -72,10 +86,10 @@ nav button:hover{
 
 main{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;  
   background-color: #eee;
-  grid-gap: 10px;
+  grid-gap: 8px;
   padding: 25px;
   text-align: center;
 }
@@ -84,6 +98,7 @@ section,article{
     background-color: #ddd;
     border-radius: 8px;
 }
+
 
 .subheading{
     font-size: 13px;
@@ -96,7 +111,7 @@ section,article{
 #project-title,#about-title{
     grid-column: 1/4;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
     background-color: gray;
 }
 
