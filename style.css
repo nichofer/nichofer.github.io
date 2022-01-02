@@ -262,10 +262,10 @@ a {
 }
 
 @media only screen and (min-width: 1170px) {
-    #contact-mobile {
+    /* #contact-mobile {
         grid-area: contact-mobile;
         display: none;
-    }
+    } */
 
     .maxLineHeight {
         line-height: 16pt;
@@ -297,7 +297,7 @@ a {
             "navigation navigation"
             "photo photo"
             "header header"
-            "contact-mobile contact-mobile"
+            "contact contact"
             "about-me about-me"
             "skills skills"
             "projects projects"
@@ -323,17 +323,17 @@ a {
         height: 25px;
     }
     
-    #contact-mobile {
-        grid-area: contact-mobile;
+    #contact {
+        grid-area: contact;
         background-color:  #8FBC8F;
         height: fit-content;
         padding: 20px 20px;
         text-align: center;
     }
 
-    #contact {
+    /* #contact {
         display: none;
-    }
+    } */
 
     .aboutImg {
         display: inline;
