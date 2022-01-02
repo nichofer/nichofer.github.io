@@ -5,56 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Staatliches&display=swap" rel="stylesheet">
     <title>Professional Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Nicole Hofer</h1>
-            <nav class="navigation">
-                <a href="#about-title"><button>About</button></a>
-                <a href="#project-title"><button>Projects</button></a>
-            </nav>
-        </header>
-        <main>
-            <h2 id="about-title">About Me</h2>
-            <section class="about-section">
-                <img class="aboutImg" src="/images/IMG_4012.JPG" alt="about photo"> 
-                <p id="infoPara">Coding excites me. I’ve spent the last 8+ years in healthcare IT most recently developing and maintaining Revenue Cycle applications, as well as, 
-                    solutions using robotic process automation. I’m always looking to expand my experience as a software developer 
-                    and learn other programming languages.</p>
-                <p id="infoPara">My technical inventory includes Java • Spring • Thymeleaf • JavaScript • MVC • HTML • CSS • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • JSON • React • REST APIs • FHIR APIs • HL7 • SQL • Responsive Design / Mobile • Relational Databases • Source Control / GitHub
-                    • EMUEScript</p>
-                <h4>Contact Me</h4>
-                <a href="https://github.com/nichofer">
+    <div class="wrapper">
+        <div id="header">
+            <br>
+            <h1 class="">Nicole Hofer</h1><br>
+            <h2 class="maxLineHeight">Senior IT Business Analyst | Software Developer | Animal Lover</h2><br><br><br><br>
+        </div>
+        <div id="photo"><img class="aboutImg" src="/images/IMG_4012.JPG" alt="about photo"></div>
+        <div class="navigation">
+            <div class="topnav">
+              <a href="#home" class="active">Hello.</a>
+              <div id="myLinks">
+                        <a href="#about-me">About Me</a> 
+                        <a href="#contact">Contact Me</a> 
+                        <!-- <a href="#social-media">Find Me</a> -->
+                        <a href="#skills">Skills</a> 
+                        <a href="#projects">Projects</a> 
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+        <div id="contact">
+            <h3 class="sectionHeader">Contact Me</h3>
+            <a href="tel:">
+                <img id="phone" src="/images/phone-icon-clipart.png" alt="phone">
+            </a>
+			<a href="mailto: nvasaris@kent.edu">
+                <img id="email" src="/images/email-icon-clipart.png" alt="email">
+            </a>
+            <a href="https://github.com/nichofer">
+                <img id="github" src="/images/GitHub-Mark-64px.png" alt="github">
+            </a>
+            <a href="http://linkedin.com/in/nicole-hofer">
+                <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
+            </a>
+        </div>
+        <div id="contact-mobile">
+            <h3 class="sectionHeader">Contact Me</h3>
+            <a href="tel:">
+                <img id="phone" src="/images/phone-icon-clipart.png" alt="phone">
+            </a>
+			<a href="mailto: nvasaris@kent.edu">
+                <img id="email" src="/images/email-icon-clipart.png" alt="email">
+            </a> 
+				<a href="https://github.com/nichofer">
                     <img id="github" src="/images/GitHub-Mark-64px.png" alt="github">
                 </a>
                 <a href="http://linkedin.com/in/nicole-hofer">
                     <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
                 </a>
-                <h2 class="subheading"></h2>
-            </section>
-            <h2 id="project-title">Projects</h2>
-            <article class="section-two">
+        </div>
+        <!-- <div id="social-media">
+            <h3 class="sectionHeader">Find Me</h3> 
+				<a href="https://github.com/nichofer">
+                    <img id="github" src="/images/GitHub-Mark-64px.png" alt="github">
+                </a>
+                <a href="http://linkedin.com/in/nicole-hofer">
+                    <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
+                </a>
+        </div> -->
+        <div id="about-me">
+            <h3 class="sectionHeader">About Me</h3><br><br>
+            <p id="aboutPara">Coding excites me. I’ve spent the last 8+ years in healthcare IT most recently developing and maintaining Revenue Cycle applications, as well as, 
+                    solutions using robotic process automation. I am permanently curious about technology and am always looking to expand my experience as a software developer 
+                    and learn other programming languages.<br><br>
+                During my free time, I enjoy working on and building a homestead.
+            </p>
+        </div>
+        <div id="skills">
+            <h3 class="sectionHeader">Skills</h3><br>
+            <p>My technical inventory includes:</p>
+            <p> Java • Spring • Thymeleaf • JavaScript • MVC • HTML • CSS • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • JSON • React • REST APIs • FHIR APIs • HL7 • SQL • Responsive Design / Mobile • Relational Databases • Source Control / GitHub
+                    • EMUEScript</p>
+        </div>
+        <div id="projects">
+            <h3 class="sectionHeader">Projects</h3>
+            <div class="project-div">
+                <div id="project-one">
+                    <article class="section-one">
                 <a href="https://github.com/2021-October-Java-PT/virtual-pet-nichofer"><h2 class="subheading">Virtual Pet</h2></a>
                 <img class=articleImg src="/images/VirtualPet.PNG" alt="virtual pet">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops.</p>
+                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops.</p><br>
             </article> 
-            <article class="section-three">
+                </div>
+                <div id="project-two">
+                <article class="section-two">
                 <a href="https://github.com/2021-October-Java-PT/virtual-pet-shelter-nichofer"><h2 class="subheading">Virtual Pet Shelter</h2></a>
                 <img class=articleImg src="images/VirtualPetShelter.PNG" alt="virtual pet shelter">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops using test driven development(TDD). </p>
+                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops using test driven development(TDD). </p><br>
             </article> 
-            <article class="section-four">
+                </div>
+                <div id="project-three">
+                    <article class="section-three">
                 <a href="https://github.com/2021-October-Java-PT/virtual-pets-amok-nichofer"><h2 class="subheading">Virtual Pet Amok</h2></a>
                 <img class=articleImg src="images/VirtualPetAmok.PNG" alt="virtual pet amok">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops, as well as, java object-oriented programming (OOP) concepts including abstraction, polymorphism, inheritance, and encapsulation using test driven development(TDD). </p>
+                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops, as well as, java object-oriented programming (OOP) concepts including abstraction, polymorphism, inheritance, and encapsulation using test driven development(TDD). </p><br>
             </article>
-        </main>
-        <footer>
-            <small>&copy Nicole Hofer 2021</small>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div id="footer">Nicole Hofer &copy; 2021<br><a href="#home">Back to Top</a>
+            </div>
         </footer>
-
     </div>
 </body>
 </html>

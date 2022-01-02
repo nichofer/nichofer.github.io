@@ -1,128 +1,350 @@
-.container{
-    background-color: #ddd;
-    border-radius: 8px;
+body {
+    background-color: #EFEFEF;
+    margin: 10% 20% 10% 20%;
     font-family: American Typewriter, serif;
-    margin: auto;
-    padding: 20px;
-    width: 80%;
 }
 
-header{
-    /*display: flex;*/
-    justify-content: space-between;
-    align-items: center;
-    font-family: American Typewriter, serif;
-    background-color: rgb(0, 174, 255);
-    padding: 5px;
-    text-align: center;
-}
-
-footer{
-    padding-top: 5px;
-    text-align: center;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 35px;
-}
-
-/* .navigation {
-    background-color: #eee;
-    border-radius: 8px;
-    grid-row: 1/4;
-    grid-column: 1;
-} */
-
-nav button{
-    align-content: center;
-    background-color: rgb(0, 174, 255);
-    color: black;
-    /*padding: 10px;*/
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-}
-
-nav button:hover{
-    background-color: #eee;
-    transition: .5s;
-}
-
-.aboutImg{
-    border-radius: 50%;
-    box-shadow: 0px 0px 3px 3px rgb(0, 174, 255);
+.navigation {
+    grid-area: navigation;
+    font-family: 'Dancing Script', cursive;
+    max-width: auto;
+    background-color: #8FBC8F;
+    color: #8FBC8F;
     height: auto;
-    margin-top: 20px;
-    width: 20%;
+    color: white;
+    border-radius: 10px;
+}
+
+/*Hamburger Menu*/
+.topnav {
+    overflow: hidden;
+    background-color: #556B2F;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    font-family: 'Staatliches', cursive;
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #556B2F;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a.icon:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #8FBC8F;
+    color: white;
+  }
+/*Hamburger Menu End*/
+
+#github,
+#linkedin,
+#phone,
+#email{
+    height: 25px;
+}
+
+#photo {
+    grid-area: photo;
+    background-color: #556B2F;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.aboutImg {
+        display: inline;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 4px whitesmoke;
+}
+
+#header {
+    grid-area: header;
+    background-color:  #8FBC8F;
+    height: auto;
+    text-align: center;
+    font-size: x-large;
+    line-height: 30%;
+    padding: 20px 20px;
+}
+
+#contact {
+    grid-area: contact;
+    background-color:  #8FBC8F;
+    height: auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#social-media {
+    grid-area: social-media;
+    background-color:  #8FBC8F;
+    height: auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#about-me {
+    grid-area: about-me;
+    background-color:  #8FBC8F;
+    text-align: center;
+    font-size: large;
+    height: auto;
+    padding: 20px 20px;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: large;
+    padding: 20px 20px;
+}
+
+#projects {
+    grid-area: projects;
+    background-color:  #8FBC8F;
+    text-align: center;
+    font-size: large;
+    padding: 20px 20px;
+}
+
+.project-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-one,
+.section-two{
+    padding-bottom: 40px;
+}
+
+#project-one,
+#project-two,
+#project-three {
+    padding: 20px 20px;
+}
+
+#footer {
+    padding: 5px 5px 5px 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:  #8FBC8F;
+    text-align: center;
+    padding-top: 5px;
+    height: fit-content;
 }
 
 .articleImg{
-    box-shadow: 0px 0px 1px 1px gray;
+    box-shadow: 0px 0px 2px 2px gray;
     height: auto;
     margin-top: 20px;
     width: 50%;
 }
 
-#github{
-    height: 25px;
+.articleImg:hover {
+    position:relative;
+    top:-25px;
+    width: 500px;
+    height:auto;
+    display:block;
 }
 
-#linkedin{
-    height: 25px;
-}
-
-#infoPara{
-    margin: 10px;
-}
-
-.sectionImg{
-    border-radius: 2px;
-    box-shadow: 0px 0px 3px 3px burlywood;
-    height: auto;
-    margin-top: 10px;
-    width: 30%;
-}
-
-main{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto;  
-  background-color: #eee;
-  grid-gap: 8px;
-  padding: 25px;
-  text-align: center;
-}
-
-section,article{
-    background-color: #ddd;
+section,
+article{
+    background-color: whitesmoke;
     border-radius: 8px;
 }
 
 
-.subheading{
-    font-size: 13px;
-}
-
-.about-section{
-    grid-column: 1/4;
-}
-
-#project-title,#about-title{
-    grid-column: 1/4;
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36pt;
+    color: #556B2F;
     text-align: center;
-    font-size: 18px;
-    background-color: gray;
+    line-height: 34pt;
 }
 
-.section-two{
-    grid-column: 1/2;
+h2 {
+    font-size: medium;
+    color: black;
+    text-align: center;
+    padding-top: 1%;
 }
 
-.section-three{
-    grid-column: 2/3;
+h3 {
+    font-size: large;
+    color: black;
+    text-align: center;
 }
 
-.section-four{
-    grid-column: 3/4;
+h1,
+h2,
+h3 {
+    margin: 0px 0px 0px 0px;
+}
+
+
+.sectionHeader {
+    font-family: 'Staatliches', cursive;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+#aboutPara{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.infoPara{
+    margin: 10px;
+    font-size: medium;
+}
+
+article {
+    text-align: center;
+}
+
+.wrapper {
+    color: #000;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+        "navigation navigation navigation"
+        "header header photo"
+        "contact contact photo"
+        "skills about-me about-me"
+        "projects projects projects"
+        "footer footer footer";
+}
+
+div,
+nav, 
+footer {
+    border-radius: 4px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+@media only screen and (min-width: 1170px) {
+    #contact-mobile {
+        grid-area: contact-mobile;
+        display: none;
+    }
+
+    .maxLineHeight {
+        line-height: 16pt;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .project-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+}
+
+
+@media only screen and (max-width: 1170px) {
+    body {
+        margin: 9%;
+        text-align: center;
+    }
+
+    .wrapper {
+        color: #000;
+        display: grid;
+        text-align: center;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "navigation navigation"
+            "photo photo"
+            "header header"
+            "contact-mobile contact-mobile"
+            "about-me about-me"
+            "skills skills"
+            "projects projects"
+            "footer footer";
+    }
+
+    #photo {
+        grid-area: photo;
+        background-color:#556B2F;
+        height: 210px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    #github,
+    #linkedin,
+    #phone,
+    #email{
+        position: relative;
+        overflow: hidden;
+        height: 25px;
+    }
+    
+    #contact-mobile {
+        grid-area: contact-mobile;
+        background-color:  #8FBC8F;
+        height: fit-content;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .aboutImg {
+        display: inline;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 3px whitesmoke;
+    }
+
+    .maxLineHeight {
+        line-height: 16pt;
+    }
 }
