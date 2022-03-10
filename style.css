@@ -312,11 +312,6 @@ a {
 }
 
 @media only screen and (min-width: 1170px) {
-    /* #contact-mobile {
-        grid-area: contact-mobile;
-        display: none;
-    } */
-
     .maxLineHeight {
         line-height: 16pt;
     }
@@ -336,6 +331,7 @@ a {
 
     #aboutPara{
         margin: 0;
+        margin-top: 2%;
         text-align: center;
     }
 
