@@ -214,6 +214,8 @@ body {
 article {
     background-color: whitesmoke;
     border-radius: 8px;
+    text-align: center;
+    padding: 5% 0%;
 }
 
 .articleImg:hover {
@@ -222,6 +224,19 @@ article {
     width: 500px;
     height: auto;
     display: block;
+}
+
+.button {
+    background-color: #232323;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 #footer {
@@ -282,10 +297,6 @@ p {
 .infoPara{
     margin: 10px;
     font-size: medium;
-}
-
-article {
-    text-align: center;
 }
 
 div,
