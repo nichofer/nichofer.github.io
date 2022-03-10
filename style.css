@@ -31,9 +31,9 @@ body {
 
 .navbar-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 64px;
-    /* align-items: center; */
+    align-items: center;
     /* padding: 25px; */
 }
 
@@ -61,12 +61,11 @@ body {
 }
 
 .content {
-    /* padding: 16px; */
+    padding-top: .25%;
     display: grid;
     grid-gap: 6px;
     grid-template-columns: 200px 1fr 1fr;
     grid-template-areas:
-        "header header photo"
         "contact contact contact"
         "skills about-me about-me"
         "projects projects projects"
@@ -77,7 +76,6 @@ body {
 .sticky {
     position: fixed;
     top: 0;
-    /* padding: 10px 16px; */
     width: 100%;
     background-color: #8FBC8F;
     height: auto;
@@ -179,7 +177,6 @@ body {
     margin-top: .5%;
 }
 
-
 /* .project-div, */
 .about-div {
     display: flex;
@@ -189,7 +186,6 @@ body {
 
 .project-div section {
     background-color: #ccc;
-    /* border: 2px solid black; */
     border-radius: 10px;
     padding: 10px;
   }
@@ -277,9 +273,9 @@ p {
 }
 
 #aboutPara{
-    /* grid-area: aboutPara; */
     margin-right: 100px;
     margin-left: 100px;
+    /* text-align: center; */
 }
 
 .infoPara{
@@ -320,6 +316,10 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #aboutPara{
+        text-align: center;
     }
 
   .navbar-container input[type="checkbox"],
@@ -417,8 +417,7 @@ a {
   .sticky {
     position: fixed;
     top: 0;
-    /* padding: 10px 16px; */
-    width: 77%;
+    width: 76%;
     background-color: #8FBC8F;
     height: auto;
     }
@@ -470,10 +469,6 @@ a {
         text-align: center;
         scroll-margin-top: 6em;
     }
-
-    /* #contact {
-        display: none;
-    } */
 
     .aboutImg {
         display: inline;
