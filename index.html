@@ -9,44 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
     <title>Professional Portfolio</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div id="header">
-            <br>
-            <h1 class="">Nicole Hofer</h1><br>
-            <h2 class="maxLineHeight">Senior IT Business Analyst | Software Developer | Outdoor & Agriculture Enthusiast</h2><br><br><br><br>
+    <div class="top-container">
+        <h1 class="">Nicole Hofer</h1>
+        <h3 class="maxLineHeight">Senior IT Business Analyst | Full-Stack Software Developer</h3>
+    </div>
+    <header>
+    <div class="navbar" id="myHeader">
+        <div class="navbar-container">
+                <input type="checkbox" name="" class="toggler" id=""></input>
+                <div class="hamburger-menu">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="nav-list" id="myLinks">
+                    <li class="nav-list__about"><a href="#about-me">About Me</a></li>
+                    <li class="nav-list__contact"><a href="#contact">Contact Me</a></li>
+                    <li class="nav-list__skills"><a href="#skills">Skills</a></li>
+                    <li class="nav-list__projects"><a href="#projects">Projects</a></li>
+                    <li class="nav-list__resume"><a href="https://drive.google.com/file/d/1sJWM_B5jWgbWMVkLt2vg4YaL5laUJ33V/view?usp=sharing">Resume</a></li>
+                    <!-- <a href="#social-media">Find Me</a> -->
+                </ul>
+            <!-- <div class="logo-img">
+                <img class="logo" src="" alt="Logo">
+            </div> -->
         </div>
-        <div id="photo"><img class="aboutImg" src="/images/IMG_4012.JPG" alt="about photo"></div>
-        <div class="navigation">
-            <div class="topnav">
-              <a href="#home" class="active">Hello.</a>
-              <div id="myLinks">
-                        <a href="#about-me">About Me</a> 
-                        <a href="#contact">Contact Me</a> 
-                        <!-- <a href="#social-media">Find Me</a> -->
-                        <a href="#skills">Skills</a> 
-                        <a href="#projects">Projects</a> 
-              </div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-        </div>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myLinks");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-        </script>
+    </div>
+    </header>
+    <div class="content">
         <div id="contact">
             <h3 class="sectionHeader">Contact Me</h3>
-            <a href="tel:">
+            <a href="tel:330-802-0942">
                 <img id="phone" src="/images/phone-icon-clipart.png" alt="phone">
             </a>
 			<a href="mailto: nvasaris@kent.edu">
@@ -59,37 +56,16 @@
                 <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
             </a>
         </div>
-        <!-- <div id="contact-mobile">
-            <h3 class="sectionHeader">Contact Me</h3>
-            <a href="tel:">
-                <img id="phone" src="/images/phone-icon-clipart.png" alt="phone">
-            </a>
-			<a href="mailto: nvasaris@kent.edu">
-                <img id="email" src="/images/email-icon-clipart.png" alt="email">
-            </a> 
-				<a href="https://github.com/nichofer">
-                    <img id="github" src="/images/GitHub-Mark-64px.png" alt="github">
-                </a>
-                <a href="http://linkedin.com/in/nicole-hofer">
-                    <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
-                </a>
-        </div> -->
-        <!-- <div id="social-media">
-            <h3 class="sectionHeader">Find Me</h3> 
-				<a href="https://github.com/nichofer">
-                    <img id="github" src="/images/GitHub-Mark-64px.png" alt="github">
-                </a>
-                <a href="http://linkedin.com/in/nicole-hofer">
-                    <img id="linkedin" src="images/LI-In-Bug.png" alt="linkedin">
-                </a>
-        </div> -->
         <div id="about-me">
-            <h3 class="sectionHeader">About Me</h3><br><br>
+            <h3 class="sectionHeader">About Me</h3>
+            <div class="about-div">
+            <div><img id="photo" class="aboutImg" src="/images/NHofer_Headshot (1).jpg" alt="about photo"></div>
             <p id="aboutPara">Coding excites me. I’ve spent the last 8+ years in healthcare IT most recently developing and maintaining Revenue Cycle applications, as well as, 
-                    solutions using robotic process automation. I am permanently curious about technology and am always looking to expand my experience as a software developer 
-                    and learn other programming languages.<br><br>
-                During my free time, I enjoy working on and building a homestead.
+                    solutions using robotic process automation. I am passionate about developing user-friendly, cost-effective and efficient solutions. I am permanently curious about technology and am always looking to expand my experience as a software developer 
+                    and learn other programming languages and frameworks.<br><br>
+                    During my free time, I enjoy working on and building a homestead.
             </p>
+            </div>
         </div>
         <div id="skills">
             <h3 class="sectionHeader">Skills</h3><br>
@@ -100,33 +76,83 @@
         <div id="projects">
             <h3 class="sectionHeader">Projects</h3>
             <div class="project-div">
-                <div id="project-one">
-                    <article class="section-one">
-                <a href="https://github.com/2021-October-Java-PT/virtual-pet-nichofer"><h2 class="subheading">Virtual Pet</h2></a>
-                <img class=articleImg src="/images/VirtualPet.PNG" alt="virtual pet">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops.</p><br>
-            </article> 
-                </div>
-                <div id="project-two">
-                <article class="section-two">
-                <a href="https://github.com/2021-October-Java-PT/virtual-pet-shelter-nichofer"><h2 class="subheading">Virtual Pet Shelter</h2></a>
-                <img class=articleImg src="images/VirtualPetShelter.PNG" alt="virtual pet shelter">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops using test driven development(TDD). </p><br>
-            </article> 
-                </div>
-                <div id="project-three">
-                    <article class="section-three">
-                <a href="https://github.com/2021-October-Java-PT/virtual-pets-amok-nichofer"><h2 class="subheading">Virtual Pet Amok</h2></a>
-                <img class=articleImg src="images/VirtualPetAmok.PNG" alt="virtual pet amok">
-                <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops, as well as, java object-oriented programming (OOP) concepts including abstraction, polymorphism, inheritance, and encapsulation using test driven development(TDD). </p><br>
-            </article>
-                </div>
+                <section id="project-four">
+                    <article class="section-four">
+                        <a href="https://github.com/nichofer/Project-Well-being"><h2 class="subheading">Unboxed Thoughts</h2></a>
+                        <img class=articleImg src="images/unboxedthoughts.PNG" alt="unboxed thoughts">
+                        <p class="infoPara">A single page application to track your well-being  over time and to discover what interventions are working for you.<br>
+                            JavaScript, HTML, CSS, Java, RESTful APIs, Spring</p><br>
+                    </article> 
+                </section>
+                <section id="project-five">
+                    <article class="section-five">
+                    <a href="https://github.com/nichofer/team-1-spa"><h2 class="subheading">Mystery Educator</h2></a>
+                    <img class=articleImg src="images/mysteryeducator.PNG" alt="mystery educator">
+                    <p class="infoPara">A single page application that will entertain and educate children about specific areas of interest.<br>
+                        JavaScript, HTML, CSS, Java, RESTful APIs</p><br>
+                    </article> 
+                </section>
+                <section id="project-six">
+                    <article class="section-six">
+                    <a href="https://github.com/nichofer/donut-maker-nichofer"><h2 class="subheading">Donut Maker Clicker</h2></a>
+                    <img class=articleImg src="images/donut1.PNG" alt="donut maker">
+                    <p class="infoPara">A site that uses button clicks to create donuts that can then be used as currency to buy auto-clickers and multipliers.<br>
+                        JavaScript, Git, GitHub, GitBash, OOP.</p><br>
+                    </article>
+                </section>
             </div>
+            <div class="project-div">
+                <section id="project-three">
+                    <article class="section-three">
+                    <a href="https://github.com/nichofer/virtual-pets-amok-nichofer"><h2 class="subheading">Virtual Pet Amok</h2></a>
+                    <img class=articleImg src="images/VirtualPetAmok.PNG" alt="virtual pet amok">
+                    <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops, as well as, java object-oriented programming (OOP) concepts including abstraction, polymorphism, inheritance, and encapsulation using test driven development(TDD). </p><br>
+                    </article>
+                </section>
+                <section id="project-two">
+                    <article class="section-two">
+                    <a href="https://github.com/nichofer/virtual-pet-shelter-nichofer"><h2 class="subheading">Virtual Pet Shelter</h2></a>
+                    <img class=articleImg src="images/VirtualPetShelter.PNG" alt="virtual pet shelter">
+                    <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops using test driven development(TDD). </p><br>
+                    </article> 
+                </section>
+                <section id="project-one">
+                    <article class="section-one">
+                        <a href="https://github.com/nichofer/virtual-pet-nichofer"><h2 class="subheading">Virtual Pet</h2></a>
+                        <img class=articleImg src="/images/VirtualPet.PNG" alt="virtual pet">
+                        <p class="infoPara">A without frills application that was written as a means of practicing basic java principles: creating classes, methods, and loops.</p><br>
+                    </article> 
+                </section>
+           </div>
         </div>
         <footer class="footer">
-            <div id="footer">Nicole Hofer &copy; 2021<br><a href="#home">Back to Top</a>
+            <div id="footer">NMH &copy; 2021<br><a href="#top">Back to Top</a>
             </div>
         </footer>
     </div>
+
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+
+    function hideMenu(){
+    let menuOpen = document.querySelector('.toggler').checked;
+
+    if(menuOpen = true){
+    document.querySelector('.toggler').checked = false;
+    }
+    }
+    window.addEventListener("scroll", hideMenu);
+    </script>
 </body>
 </html>
